@@ -182,18 +182,6 @@ header .intro-text .skills {
     border-bottom: 2px solid #A1ADB8;
 }
 
-
-/*.navbar-custom .navbar-nav li.active a:hover,*/
-
-
-/*.navbar-custom .navbar-nav li.active a:focus,
-.navbar-custom .navbar-nav li.active a:active {
-  color: none;
-  /*background: #18BC9C;*/
-
-
-/*}*/
-
 .navbar-custom .navbar-toggle {
     color: white;
     text-transform: uppercase;
@@ -235,7 +223,8 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 9% 0;
+    padding: 4% 0;
+    background: white;
 }
 
 section h2 {
@@ -306,6 +295,10 @@ section.success {
 
 #portfolio * {
     z-index: 2;
+}
+
+#portfolio {
+    margin: 9% 0 0 0;
 }
 
 @media (min-width: 767px) {
@@ -611,51 +604,8 @@ fieldset[disabled] .btn-success.active {
     display: none;
 }
 
-.video-container {
-    display: inline;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-    transform: translateX(-50%) translateY(-50%);
-}
-
-
-/*
-@media (min-width: 1024px) {
-    .video-container {
-        padding-top: 42%;
-    }
-}
-
-@media (min-width: 768px) {
-    .video-container {
-        padding-top: 657px;
-    }
-}*/
-
-
-/*@media (max-width: 768px) {
-    .video-container {
-        display: none;
-    }
-    header {
-        background-color: #52616F;
-    }
-}*/
-
-.video-container .overlay {
-    height: 99.6%;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    z-index: 2;
-    background: #3a4f65;
-    opacity: 0.5;
-}
-
 #bgvid {
-    top: 50%;
+    top: 0px;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
@@ -696,12 +646,6 @@ fieldset[disabled] .btn-success.active {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-
-
-/*@media (min-width: 768px) {
-  #bgvid{
-  padding-top: 56%;
-  }*/
 
 
 /*LOGO HEADER */
@@ -826,4 +770,22 @@ span.developer-role {
 
 .python-icon {
     background-image: url("../img/python.jpg")
+}
+
+#contact {
+    background-image: url("../img/background/london-mailbox.jpg");
+    /*background-image: url("../img/background/tech-mailbox.png");*/
+    /*background-image: url("../img/background/unusedmailbox.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /*filter: brightness(55%);*/
+}
+
+.form-control {
+    color: #eff5ff;
+}
+
+.text-danger {
+    color: #ff8f8d;
 }
