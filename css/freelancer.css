@@ -259,7 +259,8 @@ section.success {
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
-    background: rgba(24, 188, 156, 0.9);
+    /*background: rgba(24, 188, 156, 0.9);*/
+    background: linear-gradient(45deg, rgba(33, 79, 124, 0.7) 0%, rgba(33, 79, 124, 0.7) 50%, rgba(124, 170, 215, -0.3) 100%);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -788,4 +789,25 @@ span.developer-role {
 
 .text-danger {
     color: #ff8f8d;
+}
+
+.slider-content p {
+    font-size: 2.1em;
+}
+
+.slides {
+    position: static !important;
+}
+
+.success .container {
+    margin: 5% auto 5% auto;
+}
+
+.overlay-video {
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    z-index: -99;
+    background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 6px);
+    background-size: 2px 2px;
 }

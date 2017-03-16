@@ -40,7 +40,9 @@
     position: absolute;
 }
 
-.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+.jssorb05 div,
+.jssorb05 div:hover,
+.jssorb05 .av {
     position: absolute;
     /* size of bullet elment */
     width: 16px;
@@ -54,7 +56,8 @@
     background-position: -7px -7px;
 }
 
-.jssorb05 div:hover, .jssorb05 .av:hover {
+.jssorb05 div:hover,
+.jssorb05 .av:hover {
     background-position: -37px -7px;
 }
 
@@ -62,11 +65,13 @@
     background-position: -67px -7px;
 }
 
-.jssorb05 .dn, .jssorb05 .dn:hover {
+.jssorb05 .dn,
+.jssorb05 .dn:hover {
     background-position: -97px -7px;
 }
 
-.arrow-left, .arrow-right {
+.arrow-left,
+.arrow-right {
     display: block;
     position: absolute;
     /* size of arrow element */
