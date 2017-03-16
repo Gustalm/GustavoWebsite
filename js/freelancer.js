@@ -58,36 +58,36 @@ $(function() {
     });
 
     jQuery(document).ready(function($) {
-        var jssor_1_options = {
-            $AutoPlay: false,
-            $SlideEasing: $Jease$.$OutQuint,
-            $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-            },
-            $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-            },
-            $SlideHeight: 500
+        // var jssor_1_options = {
+        //     $AutoPlay: false,
+        //     $SlideEasing: $Jease$.$OutQuint,
+        //     $ArrowNavigatorOptions: {
+        //         $Class: $JssorArrowNavigator$
+        //     },
+        //     $BulletNavigatorOptions: {
+        //         $Class: $JssorBulletNavigator$
+        //     },
+        //     $SlideHeight: 500
 
-        };
+        // };
 
-        var slider = new $JssorSlider$("slider", jssor_1_options);
+        // var slider = new $JssorSlider$("slider", jssor_1_options);
 
         /*responsive code begin*/
         /*you can remove responsive code if you don't want the slider scales while window resizing*/
-        function ScaleSlider() {
-            var refSize = slider.$Elmt.parentNode.clientWidth;
-            if (refSize) {
-                refSize = Math.min(refSize, 1920);
-                slider.$ScaleWidth(refSize);
-            } else {
-                window.setTimeout(ScaleSlider, 30);
-            }
-        }
-        ScaleSlider();
-        $(window).bind("load", ScaleSlider);
-        $(window).bind("resize", ScaleSlider);
-        $(window).bind("orientationchange", ScaleSlider);
+        // function ScaleSlider() {
+        //     var refSize = slider.$Elmt.parentNode.clientWidth;
+        //     if (refSize) {
+        //         refSize = Math.min(refSize, 1920);
+        //         slider.$ScaleWidth(refSize);
+        //     } else {
+        //         window.setTimeout(ScaleSlider, 30);
+        //     }
+        // }
+        // ScaleSlider();
+        // $(window).bind("load", ScaleSlider);
+        // $(window).bind("resize", ScaleSlider);
+        // $(window).bind("orientationchange", ScaleSlider);
         /*responsive code end*/
 
         var skillsetObjects = returnSkillSetObjects();
@@ -127,7 +127,7 @@ function returnSkillSetObjects() {
                 'que era integrado em uma camada middleware contendo uma Web Api (.NET) responsável pelo gerenciamento de todos os módulos do ERP.</br> Como repositório do banco de dados e' +
                 'ORM utilizou-se o ADO.NET EntityFramework 5.</br> Na arquitetura, optou-se por desacoplar o front end do back-end, gerando camadas específicas para' +
                 'cada módulo do ERP e camcadas de back-end centralizadas na WebApi, de modo que o desenvolvimento e deploy de front e back-end fossem' +
-                'independentes" href="#">.NET</a><img class="technology-logo net-icon"/>',
+                ' independentes" href="#">.NET</a><img class="technology-logo net-icon"/>',
             'value': 8,
             'length': defaultLength,
             'description': 'Details 1'
@@ -142,17 +142,11 @@ function returnSkillSetObjects() {
             'length': defaultLength,
             'description': 'Details 2'
         }
-        // {
-        //     'headline': '<a class="skill-clickable" data-text="" href="#">Java</a><img class="technology-logo java-icon"/>',
-        //     'value': 4,
-        //     'length': defaultLength,
-        //     'description': 'Details 2'
-        // }
     ];
 
     var frontEndObject = [{
             'headline': '<a class="skill-clickable" data-text="Acredito que HTML5 e CSS3 são conhecimentos essenciais(e naturais) para qualquer' +
-                'desenvolvedor web no mercado. Através do desenvolvimento de diversas aplicações web pelos anos utilizando funcionalidades nativas' +
+                ' desenvolvedor web no mercado. </br>Através do desenvolvimento de diversas aplicações web pelos anos utilizando funcionalidades nativas' +
                 'dessas tecnologias e de  versões anteriores, tais como ' +
                 'canvas, elementos de reprodução multimídia, LocalStorage e SessionStorage considero ter um conhecimento avançado nessas linguagens de marcação' +
                 '"href="#">HTML5/CSS3</a><img class="technology-logo java-icon"/>',
@@ -162,8 +156,8 @@ function returnSkillSetObjects() {
         },
         {
             'headline': '<a class="skill-clickable" data-text="Seguindo a mesma linha ds tecnologias HTML5/CSS3, javascript é outra linguagem de programação' +
-                'que TODO desenvolvedor web deve saber, por ser algo essencial para o dinâmismo das páginas web. Posso afirmar ter um conhecimento avançado' +
-                'em javascript e na biblioteca jquery pois em todos os projetos web que desenvolvi utilizei as normas de boas práticas na codificação deste,' +
+                'que TODO desenvolvedor web deve saber, por ser algo essencial para o dinâmismo das páginas web. </br>Posso afirmar ter um conhecimento avançado' +
+                ' em javascript e na biblioteca jquery pois em todos os projetos web que desenvolvi utilizei as normas de boas práticas na codificação deste,' +
                 'tais como prototipação de funcões, e padrões de projeto web" href="#">Javascript/JQuery</a><img class="technology-logo java-icon"/>',
             'value': 9,
             'length': defaultLength,
@@ -171,8 +165,22 @@ function returnSkillSetObjects() {
         },
         {
             'headline': '<a class="skill-clickable" data-text="Utilizei AngularJS 2 integrado ao Ionic 2 em um projeto mobile que desenvolvi por conta para atender' +
-                +'a uma necessidade de uma empresa terceira. Posso dizer que até agora gostei muito da nova arquitetura do Angular2 comaparado com seu' +
-                'antecessor, e estou aprimorando meu conhecimento nesta nova tecnologia " href="#">Angular2</a><img class="technology-logo java-icon"/>',
+                ' a uma necessidade de uma empresa terceira. </br>Posso dizer que até agora gostei muito da nova arquitetura do Angular2 comaparado com seu' +
+                ' antecessor, e estou aprimorando meu conhecimento nesta nova tecnologia"  href="#">Angular2</a><img class="technology-logo java-icon"/>',
+            'value': 5,
+            'length': defaultLength,
+            'description': 'Details 2'
+        }
+    ];
+
+    var databaseObject = [{
+            'headline': '<a class="skill-clickable" data-text="" href="#">SQL</a><img class="technology-logo java-icon"/>',
+            'value': 9,
+            'length': defaultLength,
+            'description': 'Details 1'
+        },
+        {
+            'headline': '<a class="skill-clickable" data-text="" href="#">NoSQL</a><img class="technology-logo java-icon"/>',
             'value': 5,
             'length': defaultLength,
             'description': 'Details 2'
@@ -186,5 +194,5 @@ function returnSkillSetObjects() {
 
 
 $(".caption").on("click", function() {
-    var aox = $("#skillset-backend .skill-1 .skill-clickable").click();
+    var aox = $(".skill-1 .skill-clickable").click();
 })

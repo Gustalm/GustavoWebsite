@@ -120,26 +120,6 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
-
-/*@media (min-width: 768px) {
-    header .container {
-        padding-top: 136px;
-        padding-bottom: 21px;
-    }
-    header .intro-text .name {
-        font-size: 2.65em;
-    }
-    header .intro-text .skills {
-        font-size: 1.35em;
-    }
-}*/
-
-@media (max-width: 400px) {
-    .navbar-custom {
-        width: 96.2%;
-    }
-}
-
 .navbar-custom {
     background: transparent;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -810,4 +790,28 @@ span.developer-role {
     z-index: -99;
     background-image: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25) 1px, transparent 1px, transparent 6px);
     background-size: 2px 2px;
+}
+
+.form-control::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: white;
+    opacity: 0.5;
+}
+
+.form-control:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity: 0.5;
+}
+
+.form-control::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: white;
+    opacity: 0.5;
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+    opacity: 0.5;
 }
