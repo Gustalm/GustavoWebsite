@@ -57,63 +57,12 @@ $(function() {
         arrowKeys: 'true'
     });
 
-    // Events
-    // var json = [{
-    //         title: 'Title 1',
-    //         description: "Description 1",
-    //         startDate: (new Date('August 31, 2011 10:29:00 pm GMT+0')),
-    //         endDate: null
-    //     },
-    //     {
-    //         title: 'Title 2',
-    //         description: "Description 2",
-    //         startDate: (new Date('December 15, 2012 00:00:00 am GMT+0')),
-    //         endDate: null
-    //     },
-    //     {
-    //         title: 'Title 3',
-    //         description: "Description 3",
-    //         startDate: (new Date('December 18, 2013 00:00:00 am GMT+0')),
-    //         endDate: null
-    //     },
-    //     {
-    //         title: 'Title 3',
-    //         description: "Description 3",
-    //         startDate: (new Date('December 18, 2014 00:00:00 am GMT+0')),
-    //         endDate: null
-    //     },
-    //     {
-    //         title: 'Title 3',
-    //         description: "Description 3",
-    //         startDate: (new Date('December 18, 2015 00:00:00 am GMT+0')),
-    //         endDate: null
-    //     },
-    //     {
-    //         title: 'Title 3',
-    //         description: "Description 3",
-    //         startDate: (new Date('December 18, 2016 00:00:00 am GMT+0')),
-    //         endDate: null
-    //     },
-    //     {
-    //         title: 'Title 3',
-    //         description: "Description 3",
-    //         startDate: (new Date('December 18, 2017 00:00:00 am GMT+0')),
-    //         endDate: null
-    //     }
-    // ];
-
-    // Initialize the plugin
-    // $("#timeline").timeCube({
-    //     data: json,
-    //     granularity: "year",
-    //     startDate: new Date('August 31, 2011 10:20:00 pm GMT+0'),
-    //     endDate: new Date('December 18, 2017 02:20:00 am GMT+0'),
-    //     transitionAngle: 60,
-    //     transitionSpacing: 100,
-    //     nextButton: $("#next-link"),
-    //     previousButton: $("#prev-link"),
-    //     showDate: false
-    // });
+    Typed.new('#editable-text', {
+        strings: [" Web.", " Back-End.", " Front-End.", " Mobile.", "."],
+        typeSpeed: 60,
+        backSpeed: 40,
+        startDelay: 200
+    });
 
     jQuery(document).ready(function($) {
         var skillsetObjects = returnSkillSetObjects();
