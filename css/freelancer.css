@@ -96,6 +96,10 @@ header {
     color: white;
     height: 657px;
     MARGIN-BOTTOM: 12.3%;
+    position: absolute;
+    top: 0px;
+    left: 13%;
+    right: 13%;
 }
 
 header .container {
@@ -216,16 +220,18 @@ section h2 {
 section.success {
     background: #18BC9C;
     color: white;
+    margin-top: 100vh;
 }
 
-@media (max-width: 767px) {
+
+/*@media (max-width: 767px) {
     section {
         padding: 75px 0;
     }
     section.first {
         padding-top: 75px;
     }
-}
+}*/
 
 #portfolio .portfolio-item {
     margin: 0 0 15px;
@@ -279,9 +285,10 @@ section.success {
     z-index: 2;
 }
 
-#portfolio {
+
+/*#portfolio {
     margin: 9% 0 0 0;
-}
+}*/
 
 @media (min-width: 767px) {
     #portfolio .portfolio-item {
