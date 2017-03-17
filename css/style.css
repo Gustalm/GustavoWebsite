@@ -1,7 +1,3 @@
-#timeline {
-    display: none
-}
-
 #timeline a {
     color: #ffffcc;
     text-decoration: none;
@@ -42,10 +38,9 @@ a.selected {
 }
 
 #timeline {
-    width: 1024px;
+    width: 100%;
     height: 450px;
     overflow: hidden;
-    margin-left: 155px !important;
     position: relative;
     background: url('../img/dot.gif') left 45px repeat-x;
 }
