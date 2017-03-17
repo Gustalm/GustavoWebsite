@@ -815,3 +815,14 @@ span.developer-role {
     color: white;
     opacity: 0.5;
 }
+
+.experience {
+    padding: 10% 0;
+    color: white;
+    position: relative;
+    background: linear-gradient(45deg, rgba(33, 79, 124, 1) 0%, rgba(33, 79, 124, 1) 50%, rgba(124, 170, 215, 1) 100%);
+}
+
+.star {
+    border-color: #e4f1fe !important;
+}

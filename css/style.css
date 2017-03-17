@@ -42,9 +42,7 @@ a.selected {
     height: 450px;
     overflow: hidden;
     margin-left: 155px !important;
-    /*margin: 50px auto;*/
     position: relative;
-    /*margin-left: -80px !important;*/
     background: url('../img/dot.gif') left 45px repeat-x;
 }
 
@@ -198,6 +196,20 @@ a.selected {
 
 #issues li.selected {
     overflow: auto;
+}
+
+#issues li.selected::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #c5d6e7;
+}
+
+#issues li.selected::-webkit-scrollbar {
+    width: 6px;
+    background-color: #c5d6e7;
+}
+
+#issues li.selected::-webkit-scrollbar-thumb {
+    background-color: #214f7c;
 }
 
 .text-strong {
