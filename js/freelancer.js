@@ -61,7 +61,7 @@ $(function() {
         strings: [" Web.", " Back-End.", " Front-End.", " Mobile.", "."],
         typeSpeed: 60,
         backSpeed: 40,
-        startDelay: 200
+        startDelay: 1000
     });
 
     jQuery(document).ready(function($) {
