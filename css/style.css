@@ -1,3 +1,7 @@
+#timeline {
+    display: none
+}
+
 #timeline a {
     color: #ffffcc;
     text-decoration: none;
