@@ -127,6 +127,7 @@
     <link href="css/slider.css" rel="stylesheet">
     <link href="css/skillset.css" rel="stylesheet">
     <link href="css/typed.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
 
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -322,7 +323,7 @@
                 <h2>Expêriencia</h2>
                 <hr class="star-primary star">
             </div>
-            <div class="row">
+            <div class="row timeline-desktop">
                 <div class="loading-slider" data-u="loading">
                     <div class="loading-overlay"></div>
                     <div class="loading-icon"></div>
@@ -474,34 +475,179 @@ tecnologias descritas.
                     <a href="#" id="next">+</a>
                     <a href="#" id="prev">-</a>
                 </div>
-                <!--<div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
-                        <div data-u="prototype" style="width:16px;height:16px;"></div>
-                    </div>-->
-                <!--<span data-u="arrowleft" class="arrow-left" data-autocenter="2"></span>
-                    <span data-u="arrowright" class="arrow-right" style="top:50px;right:0px;" data-autocenter="2"></span>-->
             </div>
-            <!--<div id="content-wrapper">
-                    <div id="timeline" class="timeCube"></div>
-                    <a href="#" onclick="return false;" id="next-link" class=""></a>
-                </div>-->
-
-            <!--<div class="col-lg-8 col-lg-offset-2">-->
-            <!--<div class="col-lg-12">
-                    <p>Sou um desenvolvedor de software Full Stack, graduado no curso de Ciências da Computação e investidor do mercado financeiro nas horas vagas. Atuo na área de Tecnologia de Informação há 9 anos, onde comecei especificamente na área analítica
-                        de infraestrutura e servidores. Nos últmos 05 anos estive focado em desenvolvimento de softwares.
-                    </p>
-                </div>
-                <div class="col-lg-12">
-                    <p> Durante estes 9 anos na carreira de Tecnologia da Informação, tive a oportunidade de atuar durante meus primeiros 04 anos na área de infraestrutura de redes. Atuando diretamente com Sistemas servidores Windows e Linux, configurando
-                        roteadores e switches, ambientes de desenvolvimento, criando rotinas de backup, configurando sistemas DBMS e criando scripts que automatizassem algumas dessas tarefas.</p>
-                </div>
-                <div class="col-lg-12">
-                    <p> Em minha carreira profissional na área de desenvolvimento, tive a oportunidade de atuar com as mais diversas tecnologias adequadas para situações específicas do ambiente corporativo. Além disso, devido a minha paixão pela interdisciplinaridade
-                        e esta mesma por parte das corporações em que trabalhei, sempre me encontrei em uma posição boa, quando o quesito é a utilização de frameworks atuais, boas práticas de codificação, design patterns.
-                    </p>
-                </div>-->
+            <div class="row row-container timeline-mobile">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-badge primary">Atual</div>
+                        <div class="timeline-panel">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item active">
+                                    <a class="nav-link active timeline-nav" data-toggle="tab" href="#home" role="tab">Rankeia Startup</a>
+                                </li>
+                                <li class="nav-item timeline-nav">
+                                    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">TwoForOneApp</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home" role="tabpanel">
+                                    <div class="timeline-heading">
+                                        <h5 class="timeline-title subtitle">Startup Rankeia</h5>
+                                        <p><small class="text-muted"><i class="glyphicon glyphicon-certificate"></i> Co-Founder & Desenvolvedor</small></p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Startup idealizada por dois amigos, onde me juntei com estes para agregar valores a Startup. Trata-se de uma plataforma de comparação direcionada a dados com o objetivo de ajudar os consumidores em suas tomadas
+                                            de decisões de compras.</p>
+                                        <p> A Plataforma foi desenvolvida na plataforma .NET utilizando-se Web Api no back-end para gerenciamento de requisições e o framework AngularJS no front-end para user interface. Como serviço, criou-se uma inteligencia
+                                            de captura automática dos dados de diversos sites para popular a base de dados de produtos. Além do conhecimento técnico, vale ressaltar o conhecimento empresarial que estou adiquirindo neste projeto. Juntamente
+                                            com a equipe, trabalhamos todos os aspectos de um workflow para criação de uma startup, desde a validação da idéia do projeto, até um plano de negócios consistente e a publicidade da idéia.</p>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="profile" role="tabpanel">
+                                    <div class="timeline-heading">
+                                        <h5 class="timeline-title subtitle">Desenvolvimento e estudo de projetos autônomos</h5>
+                                        <p><small class="text-muted"><i class="glyphicon glyphicon-certificate"></i>  Analista Desenvolvedor </small></p>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>TwoForOneApp(Ionic2) – Projeto em desenvolvimento para plataforma Mobile (Android/IOS) com o intuito de gerenciar e demonstrar cupons de desconto fornecidos por uma empresa terceira. No back-end utilizei o novo
+                                            Framework ASP.NET Web Api Core juntamente com Entity Framework 6 e SQL Server para persistência dos dados. No front-end optei por desenvolver em Ionic2 com Angularjs 2 para as principais plataformas mobile (Androis/IOS)
+                                            juntamente com o Google Maps API para uma melhor user experience.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge warning">
+                            <p class="label-multiple-year">2015/2016</p>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Planner Consultoria e Desenvolvimento de Software</h4>
+                                <p><small class="text-muted"><i class="glyphicon glyphicon-certificate"></i>  Analista Desenvolvedor </small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Sistema .NET desenvolvido para gerenciamento, análise e visualização de veículos equipados com sistemas GPS terceiros. O Sistema web foi desenvolvido utilizando uma arquitetura em camadas e últimas tecnologias Microsoft
+                                    tais como Entity Framework 6.0 agindo como facilitador de acesso ao banco de dados, Framework Web API no back-end para gerenciamento de requisições e disponibilização de serviço REST. No front end desenvolvemos a apliação
+                                    em Angular JS e Google Maps API para visualização da posição dos veículos além de gerenciamento de rotas e visualização de desvios. Além do sistema web, criou-se também um serviço (em C++) para o processamento rápido
+                                    de todos os GPS que eram enviados pelos veículos.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-badge success">
+                            <p class="label-multiple-year">2012/2015</p>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Fcamara Formação e Consultoria em TI</h4>
+                            </div>
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item active">
+                                    <a class="nav-link active timeline-nav" data-toggle="tab" href="#fcamaranet" role="tab">.NET</a>
+                                </li>
+                                <li class="nav-item timeline-nav">
+                                    <a class="nav-link" data-toggle="tab" href="#fcamarapython" role="tab">Python</a>
+                                </li>
+                                <li class="nav-item timeline-nav">
+                                    <a class="nav-link" data-toggle="tab" href="#fcamarabi" role="tab">BI</a>
+                                </li>
+                                <li class="nav-item timeline-nav">
+                                    <a class="nav-link" data-toggle="tab" href="#fcamarasearchengine" role="tab">Search Engines</a>
+                                </li>
+                            </ul>
+                            <div class="timeline-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="fcamaranet" role="tabpanel">
+                                        <div class="timeline-heading">
+                                            <h5 class="timeline-title subtitle">.NET</h5>
+                                            <p><small class="text-muted"><i class="glyphicon glyphicon-certificate"></i>  Analista Desenvolvedor </small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Sistema interto de ERP desenvolvido em AngularJS nas camadas de Front-End, integrando com uma camada de Web Api (.NET) responsável pelo gerenciamento de todos os módulos do ERP. Como repositório do banco de
+                                                dados e ORM utilizou-se o ADO.NET Entity Framework 5. Na arquitetura, optou-se por desacoplar o front end do back-end, gerando camadas específicas para cada módulo do ERP e camcadas de back-end centralizadas
+                                                na Web Api, de modo que o desenvolvimento e deploy de front e back-end fossem independentes</p>
+                                            <p>Web services desenvolvidos em C# no framework WCF, para integração em sistemas de altadisponibilidade e desempenho, comunicação feita em diversos protocolos como FIX, TCP,UDP, .NET Remoting, dependente do aplicativo
+                                                cliente. Controle de versão pelo Team Foundation Server. </p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="fcamarapython" role="tabpanel">
+                                        <div class="timeline-heading">
+                                            <h5 class="timeline-title subtitle">Desenvolvimento de projeto Python 3</h5>
+                                            <p><small class="text-muted"><i class="glyphicon glyphicon-certificate"></i>  Analista Desenvolvedor </small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Sistema criado para agir como intermediário entre dois endpoints, fossem esses SQL, Soap Service ou Rest Service. Foi utilizado Python 3.4 como linguagem de desenvolvimento integrando o Flask Web Framework para
+                                                o gerenciamento de sessões dos usuários e controle de permissão as views. Para comunicação com serviços Rest e Soap o modulo nativo Requests do Python agiu como base de comunicação. O Mysql serviu como banco
+                                                relacional interno integrado com o ORM Peewee, por ser dinâmico e atuar como intermediário do banco no back-end da aplicação. No front-end utilizou-se o framework AngularJS para uma melhor convenção de programação
+                                                e rápido desenvolvimento dos CRUDS utilizados na aplicação. Na autenticação utilizou-se o modulo JWT para criação do token de autenticação do usuário logado e interceptors do AngularJS para interceptar todas
+                                                as requisições da aplicação para validação dos Tokens. </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="fcamarabi" role="tabpanel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title subtitle">Sistemas BI</h4>
+                                            <p><small class="text-muted"><i class="glyphicon glyphicon-certificate"></i>  Consultor BI </small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Desenvolvimento de Cubos OLAP no Analysis Service com queries MDX pré- indexadas para filtragem e exibição de grandes quantidades de dados em dashboards específicas de clientes.</p>
+                                            <p> Criação de soluções em Reporting Service para geração de relatórios complexos e dinâmicos contemplando a criação de queries MDX aplicáveis nos cubos de dados. Criação de pacotes Integration Services (SSIS) como
+                                                solução ETL para Crawling, Consolidação e Load de grandes quantidades de dados em diferentes tipos de formato. </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="fcamarasearchengine" role="tabpanel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title subtitle">Search Engines</h4>
+                                            <p><small class="text-muted"><i class="glyphicon glyphicon-certificate"></i> Especialista em Buscas Corportivas</small></p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Implementação, Manutenção e Customização de Search Engines de alta escalabilidade e disponibilidade tais como: Apache Solr, Elastic Search e FAST Search for Sharepoint sendo responsável por estratégias de crawling
+                                                de dados, criação de indexadores específicos de pesquisa, escalabilidade e configuração de alta disponibilidade através de múltiplas instâncias consumidas por load balancers. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge info">
+                            <p class="label-multiple-year">2010/2011</p>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Fiorde Logística</h4>
+                                <p><small class="text-muted"><i class="glyphicon glyphicon-certificate"></i> Analista de Suporte de Infraestrutura</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Suporte e manutenção de servidores, computadores e notebooks (Software e Hardware).</p>
+                                <p>Diagnóstico e manutenção de redes, configuração de serviços diversos.</p>
+                                <p>Utilização do Active Directory, instalação e manutenção dos sistemas operacionais Windows XP/2000, Windows 2008 Server. Criação de Scripts utilizados para mapeamento de Unidades de rede e configuração do Active Directory.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-badge danger">
+                            <p class="label-multiple-year">2009</p>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Prodesp – Centro de Processamento de Dados do Estado de São Paulo</h4>
+                                <p><small class="text-muted"><i class="glyphicon glyphicon-certificate"></i> Estágiario em suporte técnico</small></p>
+                            </div>
+                            <div class="timeline-body">
+                                <p>Auxilio técnico a usuários na utilização de softwares, instalação de Softwares, drivers e Sistemas Operacionais.</p>
+                                <p> Auxilio na instalação, manutenção e configuração de tipologias de redes, microcomputadores e plataformas de comunicação de dados.</p>
+                                <p> Atendimento níves 1, 2, 3 e 4 para registro e resolução das ocorrências no sistema Help Desk.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        </div>
+        <!--</div> -->
     </section>
     <!-- Contact Section -->
     <section id="contact">
@@ -568,10 +714,10 @@ tecnologias descritas.
                             <img src="img/profile3.png" width="70" height="70">
                         </div>
                         <div class="bio">
-                            <p class="bio-info">Desenvolvedor Full-Stack, graduado em Ciência da Computação, com experiência profissional em ambientes de desenvolvimento back-end, front-end, SGBDs, e deployment.
+                            <p class="bio-info">Desenvolvedor de Softwares, graduado em Ciência da Computação, com experiência profissional em ambientes de desenvolvimento back-end, front-end, SGBDs, e deployment.
                             </p>
                             <p class="bio-info">Gustavo combina sua interdisciplinaridade junto com seus 8 anos de experiência profissional na área de Tecnologia da Informação para desenvolver aplicações robustas, escaláveis e de fácil manutenção.</p>
-                            <p class="bio-hire-now">Desenvolvedor Full-Stack.<br> Janeiro 2017. <a class="contact_me" href="#contact" title="Contrate Gustavo Henrique">Contrate Agora<i class="fa fa-angle-double-right"></i></a>
+                            <p class="bio-hire-now">Desenvolvedor de Software.<br> Janeiro 2017. <a class="contact_me" href="#contact" title="Contrate Gustavo Henrique">Contrate Agora<i class="fa fa-angle-double-right"></i></a>
                             </p>
                         </div>
                     </div>
@@ -834,9 +980,9 @@ tecnologias descritas.
                             <h2>Business Intelligence</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/Business_Intelligence_wordcloud.jpg" class="img-responsive img-centered" alt="">
-                            <p>Desenvolvimento de Cubos OLAP no Analysis Service com queries MDX pré- indexadas para filtragem e exibição de grandes quantidades de dados em dashboards específicas de clientes. Criação de soluções em Reporting Service para
-                                geração de relatórios complexos e dinâmicos contemplando a criação de queries MDX aplicáveis nos cubos de dados. Criação de pacotes Integration Services (SSIS) como solução ETL para Crawling, Consolidação e Load de grandes
-                                quantidades de dados em diferentes tipos de formato.
+                            <p>Desenvolvimento de Cubos OLAP no Analysis Service com queries MDX pré- indexadas para filtragem e exibição de grandes quantidades de dados em dashboards específicas de clientes.</p>
+                            <p> Criação de soluções em Reporting Service para geração de relatórios complexos e dinâmicos contemplando a criação de queries MDX aplicáveis nos cubos de dados. Criação de pacotes Integration Services (SSIS) como solução ETL
+                                para Crawling, Consolidação e Load de grandes quantidades de dados em diferentes tipos de formato.
                             </p>
                             <ul class="list-inline item-details">
                                 <li>Projeto:
