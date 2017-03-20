@@ -235,6 +235,7 @@ hr.star-primary:after {
     #portfolio .portfolio-item {
         margin: 0 0 15px;
         right: 0;
+        height: 240px;
     }
     
     #portfolio .portfolio-item .portfolio-link {
@@ -835,4 +836,32 @@ hr.star-primary:after {
     .row-container {
         position: relative;
         display: inline-block;
+    }
+    
+    .developer-image {
+        content: url("../img/profile3.png")
+    }
+    
+    .img-backend {
+        content: url("../img/portfolio/back-end.jpg")
+    }
+    
+    .img-frontend {
+        content: url("../img/portfolio/front-end.jpg")
+    }
+    
+    .img-mobile {
+        content: url("../img/portfolio/mob-app-11-2 - Copy.png")
+    }
+    
+    .img-database {
+        content: url("../img/portfolio/database.jpg")
+    }
+    
+    .img-bi {
+        content: url("../img/portfolio/Business_Intelligence_wordcloud.jpg")
+    }
+    
+    .img-search {
+        content: url("../img/portfolio/search-engine.png")
     }
