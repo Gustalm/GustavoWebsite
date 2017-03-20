@@ -1,3 +1,5 @@
+var language = "pt-br";
+
 (function($) {
     "use strict"; // Start of use strict
 
@@ -51,7 +53,6 @@
 
 
 $(function() {
-
     $().timelinr({
         orientation: 'horizontal',
         arrowKeys: 'true'
@@ -167,7 +168,15 @@ function returnSkillSetObjects() {
     return skillObjectsArray;
 }
 
-
 $(".caption").on("click", function() {
     var aox = $(".skill-1 .skill-clickable").click();
 })
+
+$("#brflag").on("click", function() {
+    window.location.href = "";
+});
+
+
+$("#usaflag").on("click", function() {
+    window.location.href = "en/index.html";
+});

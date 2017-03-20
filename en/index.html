@@ -121,15 +121,15 @@
 
     <title alt="Pagina Portifolio Desenvolvedor Full Stack .Net Python">Gustavo Almeida - Portifólio Desenvolvedor Full Stack</title>
 
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/freelancer.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/slider.css" rel="stylesheet">
-    <link href="../css/skillset.css" rel="stylesheet">
-    <link href="../css/typed.css" rel="stylesheet">
-    <link href="../css/timeline.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/skillset.css" rel="stylesheet">
+    <link href="css/typed.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
 
-    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -144,17 +144,11 @@
 </head>
 
 <body class="index" alt="Curriculum cv de Gustavo Almeida. Desenvolvedor Back end e Front end">
-
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand logo-container-header logo-canvas" href="#page-top">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" class="logo">
+            <a class="navbar-brand logo-container-header logo-canvas" href="#page-top">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" class="logo">
                         <path d="M50.07,0.212c-27.614,0-50,22.384-50,49.999c0,9.157,2.474,17.731,6.77,25.111L2.044,98.237l22.917-4.796
                       c7.381,4.297,15.954,6.768,25.109,6.768c27.614,0,50-22.385,50-49.999C100.07,22.596,77.684,0.212,50.07,0.212z"
                             class="bubble" />
@@ -168,30 +162,41 @@
                       c0.768-1.026,2.223-1.234,3.25-0.465c1.025,0.77,1.232,2.225,0.463,3.25L42.06,64.761C41.603,65.369,40.906,65.689,40.201,65.689z"
                             class="icon" />
                     </svg>
-                    <div class="logo-container-text">
-                        <span class="developer-name">Gustavo Almeida</span>
-                        <span class="developer-role">Programador Full Stack</span>
-                    </div>
-                </a>
+                <div class="logo-container-text">
+                    <span class="developer-name">Gustavo Almeida</span>
+                    <span class="developer-role">Software Developer</span>
+                </div>
+            </a>
+            <div class="flag-container">
+                <img src="img/brazil-flag-icon.png" id="brflag" class="flag active" width="20px" height="15px">
+                <img src="img/usa-flag-icon.png" id="usaflag" class="flag" width="20px" height="15px">
+            </div>
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">Sobre</a>
+                        <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#portfolio">Habilidades</a>
+                        <a href="#portfolio">Skills</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#experience">Experiência</a>
+                        <a href="#experience">Experience</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#contact">Contato</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -201,8 +206,8 @@
     </nav>
 
     <div class="overlay-video"></div>
-    <video playsinline autoplay muted loop poster="../img/typing-code.jpg" id="bgvid">
-                <source src="../typingbackgroundv1.mp4" type="video/mp4">
+    <video playsinline autoplay muted loop poster="img/typing-code.jpg" id="bgvid">
+                <source src="typingbackgroundv1.mp4" type="video/mp4">
     </video>
     <!-- Header -->
     <header>
@@ -211,7 +216,7 @@
                 <div class="col-lg-12">
                     <img class="img-responsive developer-image" alt="Desenvolvedor back end front end full stack">
                     <div class="intro-text">
-                        <span class="name">Programador<span id="editable-text">...</span></span>
+                        <span class="name"><span id="editable-text">...</span> Developer</span>
                         <hr class="star-light main-star">
                         <span class="skills">.NET - Python 3 - NodeJs - Angular 2 - React JS</span>
                     </div>
@@ -228,17 +233,19 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Sou um desenvolvedor de software Full Stack, graduado no curso de Ciências da Computação e investidor do mercado financeiro nas horas vagas. Atuo na área de Tecnologia de Informação há 9 anos, onde comecei especificamente na área analítica
-                        de infraestrutura e servidores. Nos últmos 05 anos estive focado em desenvolvimento de softwares.
+                    <p>I am a 25 years web developer, graduated in Computer Science by the University Nove de Julho (Brazil - São Paulo). I've been working with IT for nine years. Of those, my first four years in the IT area was working with network infrastructure
+                        and servers. For the last five years I've been working focused on software development.
                     </p>
                 </div>
                 <div class="col-lg-12">
-                    <p> Durante estes 9 anos na carreira de Tecnologia da Informação, tive a oportunidade de atuar durante meus primeiros 04 anos na área de infraestrutura de redes. Atuando diretamente com Sistemas servidores Windows e Linux, configurando
-                        roteadores e switches, ambientes de desenvolvimento, criando rotinas de backup, configurando sistemas DBMS e criando scripts que automatizassem algumas dessas tarefas.</p>
+                    <p> During these 9 years in the Information Technology career the firsts four years I had the oportunity to preside with Network Infrastructure and Servers/Mainframes. Working directly in Linux, Windows and Solaris operating systems. Installing,
+                        Configuring and customizing network Routers and Switchers. Dealing with development enviroment, DBMS, backup routines, and scripting server specific functions. </p>
                 </div>
                 <div class="col-lg-12">
-                    <p> Em minha carreira profissional na área de desenvolvimento, tive a oportunidade de atuar com as mais diversas tecnologias adequadas para situações específicas do ambiente corporativo. Além disso, devido a minha paixão pela interdisciplinaridade
-                        e esta mesma por parte das corporações em que trabalhei, sempre me encontrei em uma posição boa, quando o quesito é a utilização de frameworks atuais, boas práticas de codificação, design patterns.
+                    <p>After all the experience I gathered working with Network Infrastructure I realized that what I loved doing the most was creating scripts to automate specific tasks, and by realizing that I decided to start working with Software Development,
+                        and ended up finding my passion. In my professional development career I had the oportunity to work with the most diverses and currents technologies adequated to corporative enviroment. I had the chance to work with back from .NET
+                        to Java, and Python 3 and front end, working with Jquery,Angular 2, Knockout, React and others libraries. I had lucky in always been working with companies leader's that encouraged me in developing my solutions Outside the Box,
+                        getting to know better about all technologies avaiable for the specific problem to be solved and improving my coding skills.
                     </p>
                 </div>
             </div>
@@ -249,7 +256,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Habilidades</h2>
+                    <h2>Skills</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -320,7 +327,7 @@
     <section class="experience" id="experience">
         <div class="container">
             <div class="col-lg-12 text-center">
-                <h2>Expêriencia</h2>
+                <h2>Experience</h2>
                 <hr class="star-primary star">
             </div>
             <div class="row timeline-desktop">
@@ -335,90 +342,92 @@
                         <li class="timeline-label"><a href="#">07/2010</a></li>
                         <li class="timeline-label"><a href="#">03/2012</a></li>
                         <li class="timeline-label"><a href="#">10/2015</a></li>
-                        <li class="timeline-label"><a href="#">07/2016 - Atual</a></li>
+                        <li class="timeline-label"><a href="#">07/2016 - Current</a></li>
                     </ul>
                     <ul id="issues">
                         <li class="timeline-label" id="date1">
                             <h1>11/2008</h1>
                             <p>
-                                <span class="company-label text-strong">Empresa:</span> <span class="company-name">Fiorde Logística Internacional, prestadora de serviços logísticos no setor de importação e exportação.
+                                <span class="company-label text-strong">Company:</span> <span class="company-name">Fiorde International Logistic, Logistic Services Provider in the importation and exportation areas.
                         </span>
                             </p>
                             <p>
-                                <span class="position-label text-strong">Cargo:</span> <span class="position-name">Estágiario de Infraestrutura
+                                <span class="position-label text-strong">Role:</span> <span class="position-name">Network Infrastructure Trainee
                         </span>
                             </p>
-                            <p>Atuei na administração e implantação microsoft AD, DNS, WSUS, DHCP, Rotinas de backup, ambientes Microsoft e Linux. Análise e implantação de cabeamento estruturado, redes Wireless 802.11x. Configurações de servidores Linux
-                                para implementação de Firewall e configuração de rede. Suporte Helpdesk Niveis 3 e 4.</p>
+                            <p>Worked in the admnistration and implatation of Microsoft Active Directory, DNS Servers, WSUS, DHCP, Backup Routines, Microsoft and Linux enviroments. Analysis and implantation of structed cabling , wireless networks 802.11x.
+                                Linux firewall implementations and Networks configuration. Helpdesk levels 3 and 4.</p>
                         </li>
                         <li class="timeline-label" id="date2">
                             <h1>10/2009</h1>
                             <p>
-                                <span class="company-label text-strong">Empresa:</span> <span class="company-name">PRODESP - Serviços de Governo Eletrônico
+                                <span class="company-label text-strong">Company:</span> <span class="company-name">PRODESP - Eletronic Government Services
                         </span>
                             </p>
                             <p>
-                                <span class="position-label text-strong">Cargo:</span> <span class="position-name">Analista Júnior de Infraestrutura
-                        </span>
+                                <span class="position-label text-strong">Role:</span> <span class="position-name">Network Infrastructure Junior Analist  </span>
                             </p>
-                            <p>Atuei no Centro de Processamento de Dados (CPD) do Poupatempo Guarulhos, tendo que lidar com a administração e atendimento de chamados para repararo de software/hardware de desktops e maquinas touchs, implementação de rotinas
-                                de backup. Helpdesk Niveis 3 e 4.</p>
+                            <p>I acted in the Processing Data Center (PCD) of São Paulo's Government Public Services Branch. Hading to handle with administration and Helpdesk Calls support to software and hardware repairs, Servers/Mainframes backup routines
+                                and Helpdesk general related issues levels 3 and 4.</p>
                         </li>
-                        <li class="timeline-label" id="date3">
+                        <li class="timeline-label" id="date1">
                             <h1>07/2010</h1>
                             <p>
-                                <span class="company-label text-strong">Empresa:</span> <span class="company-name">Fiorde Logística Internacional, prestadora de serviços logísticos no setor de importação e exportação.
+                                <span class="company-label text-strong">Company:</span> <span class="company-name">Fiorde International Logistic, Logistic Services Provider in the importation and exportation areas.
                         </span>
                             </p>
                             <p>
-                                <span class="position-label text-strong">Cargo:</span> <span class="position-name">Analista Júnior de Infraestrutura
+                                <span class="position-label text-strong">Role:</span> <span class="position-name">Network Infrastructure Trainee
                         </span>
                             </p>
-                            <p>Atuar com programação, administração e implantação microsoft AD, DNS, WSUS, DHCP, Rotinas de backup, ambientes Microsoft e Linux. Análise e implantação de cabeamento estruturado, redes Wireless 802.11x. Configurações de servidores
-                                Linux para implementação de Firewall e configuração de rede. Suporte Helpdesk Niveis 3 e 4.</p>
+                            <p>Worked in the admnistration and implatation of Microsoft Active Directory, DNS Servers, WSUS, DHCP, Backup Routines, Microsoft and Linux enviroments. Analysis and implantation of structed cabling , wireless networks 802.11x.
+                                Linux firewall implementations and Networks configuration. Helpdesk levels 3 and 4.</p>
                         </li>
                         <li class="timeline-label" id="date4">
                             <h1>03/2012</h1>
                             <p>
-                                <span class="company-label text-strong">Empresa:</span> <span class="company-name"> Fcamara- Formação e Consultoria em TI, empresa que oferece serviços de
-consultoria em TI focada em desenvolvimento e atendendo as áreas de e-commerce, operações
-portuarias, inovação, consultoria e operações críticas 
+                                <span class="company-label text-strong">Company:</span> <span class="company-name"> Fcamara - IT Formation and Consulting, IT Software Development Consultance focused on e-commerce, port and critical operations and critical operations 
                         </span>
                             </p>
                             <p>
-                                <span class="position-label text-strong">Cargo:</span> <span class="position-name">Analista Desenvolvedor Pleno
+                                <span class="position-label text-strong">Role:</span> <span class="position-name">Full Software Developer
                         </span>
                             </p>
-                            <p> <span class="company-label text-strong">Principais Projetos:</span></p>
-                            <p><span class="company-label text-strong">Sistema de Integração (Python) – </span> Sistema criado para agir como intermediário entre dois endpoints, fossem esses SQL, Soap Service ou Rest Service.
+                            <p> <span class="company-label text-strong">Main Projects:</span></p>
+                            <p><span class="company-label text-strong">integration System (Python) – </span> System made to act as a intermetiate between two endpoints, handling any kind of data from any datasource such as SQL, SOAP and Rest Services.
                             </p>
-                            <p> Foi utilizado Python 3.4 como linguagem de desenvolvimento integrando o Flask Web Framework para o gerenciamento de sessões dos usuarios e controle de permissão as views.Para comunicação com serviços Rest e Soap o modulo nativo
-                                Requests do Python agiu como base de comunicação. O Mysql serviu como banco relacional interno integrado com o ORM Peewee, por ser dinâmico e atuar como intermediário do banco no back-end da aplicação. No front-end utilizou-se
-                                o framework AngularJS para uma melhor convenção de programação e rápido desenvolvimento dos CRUDS utilizados na aplicação. Na autenticação utilizou-se o modulo JWT para criação do token de autenticação do usuário logado
-                                e interceptors do AngularJS para interceptar todas as requisições da aplicação para validação dos Tokens.
+                            <p> For this system, i've used python 3 as mains development technology integrated with Flask Web Framework for users sessions management and security control. For comunication between the different kinds of datasources, I used
+                                the native module Requests from Python 3. For the database application, Mysql was integrated with ORM Peewee, an specific fast and lightweigth ORM library for Python 3. On the front end application, AngularJs showed itself
+                                really useful, considering the ammount of cruds necessary for this application JWT Security Module was used in the authentication to generate user-session based tokens, alogn with interceptors to validate all requests made
+                                to server.
                             </p>
-                            <p><span class="company-label text-strong">ERP Interno (. NET) –</span> Sistema interto de ERP. </p>
-                            <p>Desenvolvido em AngularJS nas camadas de Front-End, integrando com uma camada middleware de Web Api (.NET) responsável pelo gerenciamento de todos os módulos do ERP. Como repositório do banco de dados e ORM utilizou-se o ADO.NET
-                                Entity Framework 5. Na arquitetura, optou-se por desacoplar o front end do back-end, gerando camadas específicas para cada módulo do ERP e camcadas de back-end centralizadas na Web Api, de modo que o desenvolvimento e deploy
-                                de front e back-end fossem independentes.
+                            <p><span class="company-label text-strong">Internal ERP  (. NET) –</span> Internal Enterprise Resource Planning. </p>
+                            <p>Developed in AngularJS on the Front End Layer, integrated with a Web API (.NET) Middleware Layer responsable for management of ERP's all modules. MSSQL was used as application database along with Enity Framework 5 as ORM. The
+                                archtechture used for this system was focused in decoupling the front-end from the back-end, generating specific view/application layers for each ERP modules and domain centralized layers in the Web Api, so that any maintenance,
+                                change or deployment in the application could be completely doable and due to the independent layers.
                             </p>
 
-                            <p> <span class="company-label text-strong">Aplicações Servidor(.NET) – </span> Webservices/WCF's
+                            <p> <span class="company-label text-strong">Services (.NET) – </span> Webservices/WCF's
                             </p>
-                            <p>Serviços Desenvolvidos em C# dentre eles Windows Services, Web Services e WCF. </br>São sistemas de alta disponibilidade e desempenho, comunicação feita em diversos protocolos como FIX, TCP,UDP, .NET Remoting, dependente do
-                                aplicativo cliente, acesso a bases de dado em SQL Server . Controle de versão pelo Team Foundation Server e GitHub. </p>
+                            <p>Web and Desktop Services developed in C# such as Windows Services, Web Serves and Windows Communication Foundation Services,</p>
+                            <p>High disponibility services focused on high performance and flexibility so it's able to communicate with different communications protocols such as FIX, TCP, UDP, etc. Using MSSQL as Database and Team Foundation Server as Version
+                                Control. </p>
 
-                            <p><span class="company-label text-strong">Sistemas BI (BI MSQL) –</span> Desenvolvimento de Cubos OLAP no Analysis Service com queries MDX pré- indexadas para filtragem e exibição de grandes quantidades de dados em dashboards
-                                específicas de clientes. Criação de soluções em Reporting Service para geração de relatórios complexos e dinâmicos contemplando a criação de queries MDX aplicáveis nos cubos de dados. Criação de pacotes Integration Services
-                                (SSIS) como solução ETL para Crawling, Consolidação e Load de grandes quantidades de dados em diferentes tipos de formato. Buscas Corporativas (Search Engines) – Implementação, Manutenção e Customização de Search Engines
-                                de alta escalabilidade e disponibilidade tais como: Apache Solr, Elastic Search e FAST Search for Sharepoint sendo responsável por estratégias de crawling de dados, criação de indexadores específicos de pesquisa, escalabilidade
-                                e configuração de alta disponibilidade através de múltiplas instâncias consumidas por load balancers.
+                            <p><span class="company-label text-strong">BI Systems (BI MSQL) –</span> Development of OLAP (Online Analytical Processing) with pre-indexed MDX queries to filtering e viewing of huge ammount of data in specific client's dashboards.
+                                Reporting Solutions through complex and dynamics Reporting Service's reports contemplating MDX queries applicable in the Data Cube. Creation Of Integration Services Packages as ETL Solutions to crawling, consolidation and
+                                load of huge ammount of data supporting different types of format.Buscas Corporativas (Search Engines) – Implementação, Manutenção e Customização de Search Engines de alta escalabilidade e disponibilidade tais como: Apache
+                                Solr, Elastic Search e FAST Search for Sharepoint sendo responsável por estratégias de crawling de dados, criação de indexadores específicos de pesquisa, escalabilidade e configuração de alta disponibilidade através de
+                                múltiplas instâncias consumidas por load balancers.
+                            </p>
+
+                            <p><span class="company-label text-strong">Search Engines –</span> Implementation, Maintenance and Customization of High Scalable and Avaiable Search Engines such as Apache Solr, Elastic Search, FAST Search for Sharepoint, beign
+                                in charge of Crawling Data Strategies, Creation of specific Search Indexers, scalability and high avaiability strategies through multiple instances integrated with load balancers
                             </p>
                         </li>
                         <li class="timeline-label" id="date5">
                             <h1>10/2015</h1>
                             <p>
-                                <span class="company-label text-strong">Empresa:</span> <span class="company-name">Planner Consultoria e Desenvolvimento de Software - empresa que oferece serviços
+                                <span class="company-label text-strong">Company:</span> <span class="company-name">Planner Consultoria e Desenvolvimento de Software - Company que oferece serviços
 de consultoria em desenvolvimento atendendo principalmente a área de logística de veículos
 terrestres e geolocalização
                         </span>
@@ -436,7 +445,7 @@ terrestres e geolocalização
                         <li class="timeline-label" id="date6">
                             <h1>Atual</h1>
                             <p>
-                                <span class="company-label text-strong">Empresa:</span> <span class="company-name">Autônomo.  Desenvolvimento e estudo de projeto para integração entre plataformas
+                                <span class="company-label text-strong">Company:</span> <span class="company-name">Autônomo.  Desenvolvimento e estudo de projeto para integração entre plataformas
 de mercado financeiro e desenvolvimento mobile com o intuito de me aperfeiçoar nas
 tecnologias descritas.
                         </span>
@@ -446,7 +455,7 @@ tecnologias descritas.
                         </span>
                             </p>
                             <p> <span class="company-label text-strong">Principais Projetos:</span></p>
-                            <p><span class="company-label text-strong">TwoForOneApp (Ionic2) - </span>Projeto em desenvolvimento para plataforma Mobile (Android/IOS) com o intuito de gerenciar e demonstrar cupons de desconto fornecidos por uma empresa terceira.
+                            <p><span class="company-label text-strong">TwoForOneApp (Ionic2) - </span>Projeto em desenvolvimento para plataforma Mobile (Android/IOS) com o intuito de gerenciar e demonstrar cupons de desconto fornecidos por uma Company terceira.
                             </p>
                             <p>No back-end utilizei o novo Framework ASP.NET Web Api Core juntamente com Entity Framework 6 e SQL Server para persistência dos dados. No front-end optei por desenvolver em Ionic2 com Angularjs 2 para as principais plataformas
                                 mobile (Androis/IOS) juntamente com o Google Maps API para uma melhor user experience.
@@ -454,14 +463,14 @@ tecnologias descritas.
                             <p><span class="company-label text-strong">Startup Rankeia - </span>Startup idealizada por dois amigos, onde me juntei com estes para agregar valores a Startup. Trata-se de uma plataforma de comparação direcionada a dados com
                                 o objetivo de ajudar os consumidores em suas tomadas de decisões de compras.</p>
                             <p> A Plataforma foi desenvolvida na plataforma .NET utilizando-se Web Api no back-end para gerenciamento de requisições e o framework AngularJS no front-end para user interface. Como serviço, criou-se uma inteligencia de captura
-                                automática dos dados de diversos sites para popular a base de dados de produtos. Além do conhecimento técnico, vale ressaltar o conhecimento empresarial que estou adiquirindo neste projeto. Juntamente com a equipe, trabalhamos
+                                automática dos dados de diversos sites para popular a base de dados de produtos. Além do conhecimento técnico, vale ressaltar o conhecimento Companyrial que estou adiquirindo neste projeto. Juntamente com a equipe, trabalhamos
                                 todos os aspectos de um workflow para criação de uma startup, desde a validação da idéia do projeto, até um plano de negócios consistente e a publicidade da idéia.</p>
-                            <p> Ainda tenho muito que evoluir, mas aos poucos estou aprimorando este conhecimento empresarial, que acredito ter grande potencial no futuro.
+                            <p> Ainda tenho muito que evoluir, mas aos poucos estou aprimorando este conhecimento Companyrial, que acredito ter grande potencial no futuro.
                             </p>
                         </li>
                         <h1>Atual</h1>
                         <p>
-                            <span class="company-label text-strong">Empresa:</span> <span class="company-name">Fiorde Logística Internacional, prestadora de serviços logísticos no setor de importação e exportação.
+                            <span class="company-label text-strong">Company:</span> <span class="company-name">Fiorde Logística Internacional, prestadora de serviços logísticos no setor de importação e exportação.
                         </span>
                         </p>
                         <p>
@@ -499,7 +508,7 @@ tecnologias descritas.
                                         <p>Startup idealizada por dois amigos, onde me juntei com estes para agregar valores a Startup. Trata-se de uma plataforma de comparação direcionada a dados com o objetivo de ajudar os consumidores em suas tomadas
                                             de decisões de compras.</p>
                                         <p> A Plataforma foi desenvolvida na plataforma .NET utilizando-se Web Api no back-end para gerenciamento de requisições e o framework AngularJS no front-end para user interface. Como serviço, criou-se uma inteligencia
-                                            de captura automática dos dados de diversos sites para popular a base de dados de produtos. Além do conhecimento técnico, vale ressaltar o conhecimento empresarial que estou adiquirindo neste projeto. Juntamente
+                                            de captura automática dos dados de diversos sites para popular a base de dados de produtos. Além do conhecimento técnico, vale ressaltar o conhecimento Companyrial que estou adiquirindo neste projeto. Juntamente
                                             com a equipe, trabalhamos todos os aspectos de um workflow para criação de uma startup, desde a validação da idéia do projeto, até um plano de negócios consistente e a publicidade da idéia.</p>
                                         </p>
                                     </div>
@@ -510,7 +519,7 @@ tecnologias descritas.
                                         <p><small class="text-muted"><i class="glyphicon glyphicon-certificate"></i>  Analista Desenvolvedor </small></p>
                                     </div>
                                     <div class="timeline-body">
-                                        <p>TwoForOneApp(Ionic2) – Projeto em desenvolvimento para plataforma Mobile (Android/IOS) com o intuito de gerenciar e demonstrar cupons de desconto fornecidos por uma empresa terceira. No back-end utilizei o novo
+                                        <p>TwoForOneApp(Ionic2) – Projeto em desenvolvimento para plataforma Mobile (Android/IOS) com o intuito de gerenciar e demonstrar cupons de desconto fornecidos por uma Company terceira. No back-end utilizei o novo
                                             Framework ASP.NET Web Api Core juntamente com Entity Framework 6 e SQL Server para persistência dos dados. No front-end optei por desenvolver em Ionic2 com Angularjs 2 para as principais plataformas mobile (Androis/IOS)
                                             juntamente com o Google Maps API para uma melhor user experience.</p>
                                     </div>
@@ -864,7 +873,7 @@ tecnologias descritas.
                             <h2>DoisPorUmApp</h2>
                             <hr class="star-primary">
                             <img class="img-responsive img-centered img-mobile" alt="">
-                            <p>Projeto em desenvolvimento para plataforma Mobile (Android/IOS) com o intuito de gerenciar e demonstrar cupons de desconto fornecidos por uma empresa terceira.</p>
+                            <p>Projeto em desenvolvimento para plataforma Mobile (Android/IOS) com o intuito de gerenciar e demonstrar cupons de desconto fornecidos por uma Company terceira.</p>
                             <p> No back-end utilizei o novo Framework ASP.NET Web Api Core juntamente com Entity Framework 6 e SQL Server para persistência dos dados. No front-end optei por desenvolver em Ionic2 com Angularjs 2 para as principais plataformas
                                 mobile (Androis/IOS) juntamente com o Google Maps API para uma melhor user experience.
                             </p>
@@ -1007,15 +1016,15 @@ tecnologias descritas.
     </div>
 
 
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="../js/jqBootstrapValidation.js"></script>
-    <script src="../js/contact_me.js"></script>
-    <script src="../js/jquery.timelinr-0.9.6.js"></script>
-    <script src="../js/skillset.js"></script>
-    <script src="../js/typed.js"></script>
-    <script src="../js/freelancer.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/jquery.timelinr-0.9.6.js"></script>
+    <script src="js/skillset.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/freelancer.js"></script>
 </body>
 
 </html>
