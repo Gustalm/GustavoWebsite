@@ -878,6 +878,14 @@ hr.star-primary:after {
             content: url("../img/portfolio/search-engine.png")
         }
         
+        #brflag {
+            content: url("../img/brazil-flag-icon.png")
+        }
+        
+        #usaflag {
+            content: url("../img/usa-flag-icon.png")
+        }
+        
         .flag-container {
             display: inline-block;
             margin-top: 16px;
@@ -889,9 +897,14 @@ hr.star-primary:after {
             cursor: pointer;
         }
         
-        .flag:hover {
+        .flag.active {
+            filter: brightness(50%);
+            cursor: default;
+        }
+        
+        .flag:not(.active):hover {
             filter: brightness(75%);
-            margin-top: 5px;
+            /*margin-top: 5px;*/
         }
         
         @media (min-width: 768px) {
