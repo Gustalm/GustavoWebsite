@@ -842,6 +842,12 @@ hr.star-primary:after {
         content: url("../img/profile3.png")
     }
     
+    .developer-image-mini {
+        content: url("../img/profile3.png");
+        width: 70px;
+        height: 70px;
+    }
+    
     .img-backend {
         content: url("../img/portfolio/back-end.jpg")
     }
