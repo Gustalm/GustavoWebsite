@@ -51,6 +51,22 @@ var language = "pt-br";
     });
 })(jQuery); // End of use strict
 
+function initializeTyped() {
+    var englishDictionary = ["Web", "Back-End", "Front-End", "Mobile", "Software"];
+    var portugueseDictionary = [" Web.", " Back-End.", " Front-End.", " Mobile.", "."];
+
+    var typedOptions = {
+        strings: [" Web.", " Back-End.", " Front-End.", " Mobile.", "."],
+        typeSpeed: 60,
+        backSpeed: 40,
+        startDelay: 1000
+    };
+    //variavel global em <script> das paginas, posteriormente mudar isso
+    if (pageLanguage === "en-us")
+        typedOptions.strings = englishDictionary;
+
+    Typed.new('#editable-text', typedOptions);
+}
 
 $(function() {
     $().timelinr({
@@ -58,12 +74,8 @@ $(function() {
         arrowKeys: 'true'
     });
 
-    Typed.new('#editable-text', {
-        strings: [" Web.", " Back-End.", " Front-End.", " Mobile.", "."],
-        typeSpeed: 60,
-        backSpeed: 40,
-        startDelay: 1000
-    });
+
+    initializeTyped();
 
     jQuery(document).ready(function($) {
         var skillsetObjects = returnSkillSetObjects();
