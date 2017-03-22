@@ -175,6 +175,10 @@ hr.star-primary:after {
             border-color: white;
         }
         
+        .navbar-toggle {
+            margin-right: 10px;
+        }
+        
         .navbar-custom .navbar-toggle:hover,
         .navbar-custom .navbar-toggle:focus {
             background-color: #18BC9C;
@@ -887,6 +891,7 @@ hr.star-primary:after {
         }
         
         .flag-container {
+            float: left;
             display: inline-block;
             margin-top: 16px;
         }
@@ -922,3 +927,15 @@ hr.star-primary:after {
             display: inline-block;
             float: right;
         }
+        
+        @media (max-width: 768px) {
+            .navbar-collapse.collapse {
+                width: 100%;
+            }
+            .collapsing {
+                width: 100%;
+            }
+        }
+        /*#bs-example-navbar-collapse-1 {
+            width: 100%
+        }*/
