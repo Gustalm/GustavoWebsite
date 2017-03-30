@@ -80,17 +80,14 @@ $(function() {
 
 
 $(".flag:not(.active)").on("click", function(e) {
-    localStorage.setItem("userClickedFlag", true)
+    localStorage.setItem("userClickedFlag", true);
 })
 
 function redirectToCountryPage() {
     if (!localStorage.getItem("userClickedFlag")) {
         $.get("https://ipinfo.io", function(response) {
-            if (response.country != "BR") {
+            if (response.country != "BR" && pageLanguage !== "en-us")
                 window.location = "/en/"
-            } else {
-                window.location = "/";
-            }
         }, "jsonp");
     } else {
         localStorage.clear();
