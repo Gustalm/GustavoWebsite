@@ -237,6 +237,7 @@ a.selected {
     overflow: auto;
     height: 93%;
     width: 95%;
+    text-align: left;
 }
 
 

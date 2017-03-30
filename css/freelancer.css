@@ -849,11 +849,11 @@ hr.star-primary:after {
         }
         
         .developer-image {
-            content: url("../img/profile3.png")
+            content: url("../img/profile.jpg")
         }
         
         .developer-image-mini {
-            content: url("../img/profile3.png");
+            content: url("../img/profile.jpg");
             width: 70px;
             height: 70px;
         }
@@ -936,6 +936,8 @@ hr.star-primary:after {
                 width: 100%;
             }
         }
-        /*#bs-example-navbar-collapse-1 {
-            width: 100%
-        }*/
+        
+        .label-skills-container {
+            padding-left: 10%;
+            text-align: left;
+        }
