@@ -1,7 +1,7 @@
 var language = "pt-br";
 
 (function($) {
-    "use strict"; // Start of use strict
+    "use strict"; // Start of uase strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('.page-scroll a').bind('click', function(event) {
@@ -75,21 +75,4 @@ $(function() {
     });
 
     initializeTyped();
-    // redirectToCountryPage();
 });
-
-
-$(".flag:not(.active)").on("click", function(e) {
-    localStorage.setItem("userClickedFlag", true);
-})
-
-// function redirectToCountryPage() {
-//     if (!localStorage.getItem("userClickedFlag")) {
-//         $.get("https://ipinfo.io", function(response) {
-//             if (response.country != "BR" && pageLanguage !== "en-us")
-//                 window.location = "/en/"
-//         }, "jsonp");
-//     } else {
-//         localStorage.clear();
-//     }
-// }
