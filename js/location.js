@@ -1,4 +1,4 @@
-redirectToCountryPage();
+// redirectToCountryPage();
 
 $(".flag:not(.active)").on("click", function(e) {
     localStorage.setItem("userClickedFlag", true);
